@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Anmeldung am Schulcomputer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #eef3f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-box {
+      background: white;
+      width: 360px;
+      padding: 28px;
+      border-radius: 14px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      font-weight: bold;
+      margin-top: 16px;
+      margin-bottom: 6px;
+    }
+
+    input {
+      width: 100%;
+      padding: 11px;
+      font-size: 17px;
+      box-sizing: border-box;
+      border: 1px solid #999;
+      border-radius: 6px;
+    }
+
+    button {
+      margin-top: 24px;
+      width: 100%;
+      padding: 12px;
+      font-size: 18px;
+      border: none;
+      border-radius: 6px;
+      background: #2b6fd6;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1f57aa;
+    }
+
+    .message {
+      margin-top: 18px;
+      font-size: 18px;
+      color: green;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h1>🏫 Anmeldung</h1>
+
+    <label for="benutzername">Benutzername:</label>
+    <input type="text" id="benutzername" autocomplete="off">
+
+    <label for="kennwort">Kennwort:</label>
+    <input type="password" id="kennwort">
+
+    <button onclick="anmelden()">Anmelden</button>
+
+    <div class="message" id="message">Super, du hast dich angemeldet! 😊</div>
+  </div>
+
+  <script>
+    function anmelden() {
+      document.getElementById("message").style.display = "block";
+    }
+  </script>
+</body>
+</html>
