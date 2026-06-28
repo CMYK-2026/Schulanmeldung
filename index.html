@@ -81,16 +81,15 @@
 
     <button onclick="anmelden()">Anmelden</button>
 
-    <div class="message" id="message">Super, du hast dich angemeldet! 😊</div>
-  </div>
-
+   <div class="message" id="message">
+    Super, du hast dich angemeldet! 😊<br><br>
+    <a href="https://anton.app/de/" target="_blank">
+        Jetzt zu ANTON
+    </a>
+</div>
   <script>
 function anmelden() {
     document.getElementById("message").style.display = "block";
-
-    setTimeout(function () {
-        window.location.href = "https://anton.app/de/";
-    }, 2000);
 }
 </script>
 </body>
