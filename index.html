@@ -85,9 +85,13 @@
   </div>
 
   <script>
-    function anmelden() {
-      document.getElementById("message").style.display = "block";
-    }
-  </script>
+function anmelden() {
+    document.getElementById("message").style.display = "block";
+
+    setTimeout(function () {
+        window.location.href = "https://anton.app/de/";
+    }, 2000);
+}
+</script>
 </body>
 </html>
